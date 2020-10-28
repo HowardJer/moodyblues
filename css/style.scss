@@ -1,0 +1,135 @@
+$header-back-color: blue;
+@import '_partial';
+@mixin border {
+border: 10px solid blue;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.banner .container {
+
+    @include border;
+}
+
+body {
+    background-color: blue;
+    font-family: sans-serif;
+    line-height: 1.4;
+
+}
+
+header {
+    background-color: $header-back-color;
+    padding: 1rem;
+    
+}
+
+.logo {
+    width: 800px;
+    height: 200px;
+   
+}
+
+section {
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.banner {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    h2 {
+        color: white;
+    font-weight: bold;
+    font-size: 3rem;    
+    text-transform: uppercase;
+    text-shadow: black 3px 3px 5px;
+    background-color: grey;
+    text-align: center;
+    }
+    
+    }
+
+
+.banner h3 {
+
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;    
+    text-transform: uppercase;
+    text-shadow: black 3px 3px 5px;
+    background-color: grey;
+    text-align: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.about {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.album-cover {
+    float: left;
+    margin-top: 6px;
+    margin-right: 1.0rem;
+    margin-bottom: 0rem;
+    border: 8px solid black;
+
+}
+
+.music-video {
+    background-color: rgba(255,255,255,.25);
+}
+
+.om {
+
+    float: right;
+    width: 560px;
+    height: 315px;
+}
+
+.clr {
+    clear: both;
+    width: 100%;
+}
+
+footer {
+
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: .5;
+}
+
+a {
+    color: goldenrod;
+}
+
+a:hover {
+    color:  gold;
+}
+a:active {
+    color: yellow;
+}
